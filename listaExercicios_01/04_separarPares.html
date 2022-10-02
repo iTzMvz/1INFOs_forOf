@@ -7,13 +7,14 @@
 
     //ENTRADA
     let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
-    let quantidade = listaDeItens.length()
+    let independienteDelValle = [];
     let par = [];
     //PROCESSAMENTO
     for(let item of listaDeItens){
-        if(item.ceil() % 2 === 0) par.push(item)
+        if(Math.ceil(item) % 2 === 0) par.push(item)
+        else independienteDelValle.push(item)
     }
 
     //SAÍDA
-    document.write(`Quantidae de elementos da lista: ${quantidade} </br> Números pares da lista ${par.join(",")} </br> Quantidade de números pares ${par.length()}`)
+    document.write(`Quantidae de elementos da lista: ${listaDeItens.length} </br> Quantidade de números pares: ${par.length}</br> Números pares da lista: ${par.sort((a,b) => a - b).join(",")}`)
 </script>
