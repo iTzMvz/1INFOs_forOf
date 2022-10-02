@@ -16,5 +16,5 @@ inteiros e decimais<meta charset="UTF-8">
     }
 
     //SAÍDA
-    document.write(`Lista de pares crescente: ${listaPar.join(", ")} </br> Lista de pares descrescente: ${listaPar.join(", ")}`)
+    document.write(`Lista de pares crescente: ${listaPar.join(", ")} </br> Lista de pares descrescente: ${listaPar.sort((a,b) => b - a).join(", ")}</br>Lista de impares crescente: ${listaImpar}</br>Lista de impares descrecente:${listaImpar.reverse()}`)
 </script>
